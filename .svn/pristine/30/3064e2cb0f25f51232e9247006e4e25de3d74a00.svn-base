@@ -1,0 +1,5 @@
+sms.nexmo.apikey=c6812d31
+sms.nexmo.apisec=803bbd5c
+sms.message=Atencion %v su vehiculo ha salido del area de estacionamiento
+sms.nexmo.from=Avior
+

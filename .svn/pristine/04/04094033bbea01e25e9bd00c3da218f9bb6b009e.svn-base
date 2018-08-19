@@ -1,0 +1,20 @@
+#Salida del log a consola
+#log4j.rootLogger=DEBUG, C     
+#log4j.appender.C=org.apache.log4j.ConsoleAppender
+#log4j.appender.C.layout=org.apache.log4j.PatternLayout
+#log4j.appender.C.layout.ConversionPattern=%d{MMddyyyy HH:mm} %-5p %c{1}:%L - %m%n
+#log4j.appender.C.Target=System.out
+
+
+
+#Salida del log a archivo
+log4j.appender.file=org.apache.log4j.RollingFileAppender  
+log4j.appender.file.maxFileSize=10MB
+log4j.appender.file.maxBackupIndex=5
+log4j.appender.file.File=/var/log/IT/tcpserver_${servertype}.log
+#log4j.appender.file.File=/home/jairo/tcp_${servertype}.log
+log4j.appender.file.threshold=debug
+log4j.appender.file.layout=org.apache.log4j.PatternLayout  
+log4j.appender.file.layout.ConversionPattern=%d{dd/MM/yyyy HH\:mm\:ss,SSS} %5p %c{1}\:%L - %m%n  
+log4j.rootLogger=log4j.rootLogger\=debug, file   
+log4j.appender.com.avior.net=DEBUG
